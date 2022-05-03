@@ -9,17 +9,17 @@ body {
 
 /* Container */
 .container {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
+   width: 100%;
+   max-width: 1100px;
+   margin: 0 auto;
 }
 
 /* Hero */
 .hero {
 	display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
+   flex-direction: column;
+   width: 100%;
+   height: 100vh;
 
 	background: url("../images/unsplash_Lks7vei-eAg.jpg") center no-repeat;
 	-webkit-background-size: cover;
@@ -28,15 +28,15 @@ body {
 
 /* Intro */
 .intro{
-    padding: 260px 260px;
+   padding: 260px 260px;
 }
 
 .intro__text {
-    font-size: 50px;
+   font-size: 50px;
 	font-family: 'HelveticaNeueCyr';
 	font-style: normal;
-    font-weight: 550;
-    line-height: 123%;
+   font-weight: 550;
+   line-height: 123%;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: #F6E542;
@@ -49,12 +49,12 @@ body {
 /* Header */
 .header {
 	border-bottom: 3px solid #f0f0f0;
-    width: 100%;
-    padding-top: 15px;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+   width: 100%;
+   padding-top: 15px;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1000;
 }
 
 /* Nav*/
@@ -66,25 +66,25 @@ body {
 	padding-bottom: 16px;
 }
 .nav__link {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 50px;
+   display: inline-block;
+   vertical-align: top;
+   margin: 0 50px;
 	color:#F0F0F0;
-    text-decoration: none;
-    transition: background .2s linear;
+   text-decoration: none;
+   transition: background .2s linear;
 }
 .nav__link.active {
 	color: #F6E542;
-    text-decoration: line-through;
+   text-decoration: line-through;
 }
 .nav__link:hover {
 	color: #F6E542;
-    text-decoration: line-through;
+   text-decoration: line-through;
 }
 
 .nav__link.active::after:hover {
 	color:#F0F0F0;
-    text-decoration: none;
+   text-decoration: none;
 }
 
 /* Contact */
@@ -121,6 +121,7 @@ body {
 	margin-top: 40px;
 }
 
+
 .contact textarea, .contact input{
 	background-color: #F7E542;
 	border-width: 0 0 2px 0;
@@ -137,11 +138,15 @@ body {
 }
 
 input:focus-visible, textarea:focus-visible {
-    outline: none;
+   outline: none;
 }
 
 .contact input {
 	width: 47%;
+}
+
+.form__items.error {
+	border-bottom:1px solid red;
 }
 
 .contact input.name {
@@ -170,7 +175,7 @@ input:focus-visible, textarea:focus-visible {
 .about {
 	background-color: #020202;
 	border-bottom: 2px solid #f0f0f0;
-    width: 100%;
+   width: 100%;
 }
 
 .about__title, .skills__title, .project__title, .data__title {
@@ -199,8 +204,8 @@ input:focus-visible, textarea:focus-visible {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
+   max-width: 1100px;
+   margin: 0 auto;
 }
 
 .info, .info__place, .dop, .dop__place, .sphere, .sphere__place, 
@@ -289,8 +294,15 @@ input:focus-visible, textarea:focus-visible {
 	letter-spacing: 0.06em;
 	font-weight: 500;
 	font-size: 20px;
-	color: #F0F0F0;
 	white-space: pre;
+}
+
+.data__place, .data__name, .data__numb {
+color: #F0F0F0;
+}
+
+.btn__data {
+	color:#F7E542;
 }
 
 .data__place, .data__numb {
@@ -309,7 +321,6 @@ input:focus-visible, textarea:focus-visible {
 }
 
 
-
 /* Responsive */
 
 @media only screen and (max-width:767px) {
@@ -323,7 +334,7 @@ input:focus-visible, textarea:focus-visible {
 
 .header {
 	height: 70px;
-    position: relative;
+   position: relative;
 	padding-top: 0;
 }
 
@@ -349,63 +360,63 @@ input:focus-visible, textarea:focus-visible {
 	right: 23px;
 	z-index: 2;
 	display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
 	
 }
 
 .header .hamburger div {
 	display: block;
-    height: 4px;
-    width: 100%;
-    border-radius: 10px;
-    background: #fff;
+   height: 4px;
+   width: 100%;
+   border-radius: 10px;
+   background: #fff;
 }
 
 .header .hamburger .top-bun{
-    transform-origin: 0% 0%;
-    transition: transform 0.3s ease-in-out;
+   transform-origin: 0% 0%;
+   transition: transform 0.3s ease-in-out;
 }
 
 .header .hamburger .meat{
-    transition: transform 0.1s ease-in-out;
+   transition: transform 0.1s ease-in-out;
 }
 
 .header .hamburger .bottom-bun{
-    transform-origin: 0% 100%;
-    transition: transform 0.3s ease-in-out;
+   transform-origin: 0% 100%;
+   transition: transform 0.3s ease-in-out;
 }
 
 .header .nav {
 	position: fixed;
-    width: 100%;
+   width: 100%;
 	padding-top: 100px;
 	background:#020202;
 	height: 100vh;
-    transform: translate(150%);
-    display: flex;
-    flex-direction: column;
-    margin-left: -40px;
-    padding-left: 40px;
-    transition: transform 0.5s ease-in-out;
-    overflow: scroll;
+   transform: translate(150%);
+   display: flex;
+   flex-direction: column;
+   margin-left: -40px;
+   padding-left: 40px;
+   transition: transform 0.5s ease-in-out;
+   overflow: scroll;
 }
 
 .header input[type="checkbox"]:checked ~ .nav {
-    transform: translateX(0);
+   transform: translateX(0);
 }
 
 .header input[type="checkbox"]:checked ~ .hamburger .top-bun {
-    transform: rotate(45deg);
+   transform: rotate(45deg);
 }
 
 .header input[type="checkbox"]:checked ~ .hamburger .meat {
-    transform: scaleY(0);
+   transform: scaleY(0);
 }
 
 .header input[type="checkbox"]:checked ~ .hamburger .bottom-bun {
-    transform: rotate(-45deg);
+   transform: rotate(-45deg);
 }
 
 .intro {
@@ -484,9 +495,9 @@ input:focus-visible, textarea:focus-visible {
 	margin-top: 25px;
 }
 
-.skills__descriprion, .data__text, .about__descriprion, .project__description  {
+.skills__descriprion, .about__descriprion, .project__description  {
 	margin: 0 10%;
-    width: 100%;
+   width: 100%;
 }
 
 
@@ -498,6 +509,9 @@ input:focus-visible, textarea:focus-visible {
 	margin: 0 auto;
 }
 
+.data__text {
+	width: 80%;
+	margin: 0 10%;
+	text-align: center;
 }
-
-
+}
