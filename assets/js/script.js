@@ -69,30 +69,3 @@ function generateTelegramMessage(firstp, secondp, thirdp) {
 	let generateString = `Message is:%0A - <b>Name:</b> <i>${firstp}</i> %0A - <b>Surname:</b> <i>${secondp}</i> %0A - <b>Message:</b> <i>${thirdp}</i> `;
 	return generateString;
 }
-
-
-
-
-
-
-
-// [0, 1, '^^', 1, 0, null, 'ads'].filter(item => item === '^^').length
-
-// let arr = [0, 1, '^^', 1, 0, null, 'ads'];
-
-// let result =arr.filter(function (item, index, array) {
-// 	return item === '^^';
-// });
-// console.log(result.length);
-
-// let arr = [' Matt', 'Ann', 'Dmitry', 'Max'];
-
-// let result = arr.map(function (item, index, array) {
-// 	return item.trim()[0];
-// });
-
-// let team = result.sort();
-
-// let srt = team.join('')
-
-// console.log(srt);
